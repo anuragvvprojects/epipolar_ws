@@ -1,0 +1,2 @@
+epipolar_pkg
+-DCATKIN_DEVEL_PREFIX=/home/anurag/mother_ws/epipolar_ws/devel -DCMAKE_INSTALL_PREFIX=/home/anurag/mother_ws/epipolar_ws/install -G Unix Makefiles
