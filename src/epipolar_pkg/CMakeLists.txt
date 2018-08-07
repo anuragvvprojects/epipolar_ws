@@ -128,6 +128,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -156,6 +157,16 @@ add_executable(KLT_epipolar src/KLT_epipolar.cpp)
 target_link_libraries(KLT_epipolar
   ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}
 )
+add_executable(opencv_opticalflow src/opencv_opticalflow.cpp)
+target_link_libraries(opencv_opticalflow
+  ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}
+  )
+
+add_executable(opencv_track src/opencv_tracking.cpp)
+target_link_libraries(opencv_track
+  ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}
+  )
+
 
 #############
 ## Install ##
